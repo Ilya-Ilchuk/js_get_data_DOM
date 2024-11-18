@@ -9,7 +9,7 @@ populationElements.forEach((el) => {
 });
 
 const total = arr.reduce((acc, i) => acc + i, 0);
-const avarage = total / arr.length;
+const average = total / arr.length;
 
 const formatNumber = (num) => num.toLocaleString();
 
@@ -17,4 +17,4 @@ const totalPopulation = document.querySelector('.total-population');
 const averagePopulation = document.querySelector('.average-population');
 
 totalPopulation.textContent = formatNumber(total);
-averagePopulation.textContent = formatNumber(Math.round(avarage));
+averagePopulation.textContent = formatNumber(Math.round(average));
